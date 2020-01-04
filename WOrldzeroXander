@@ -1,0 +1,31 @@
+
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/eWKgbdix", true))()
+local w = library:CreateWindow('EnomisScripting')
+w:Section("Whitelist for Xander2412")
+local a = w:Button("Bank", function()
+   game:GetService("Players").LocalPlayer["PlayerGui"]["MainGui"]["Bank"].Visible = true
+end)
+local b = w:Button("Sell", function()
+   game:GetService("Players").LocalPlayer["PlayerGui"]["MainGui"]["Sell"].Visible = true
+end)
+local c = w:Button("Upgrade", function()
+   game:GetService("Players").LocalPlayer["PlayerGui"]["MainGui"]["ItemUpgrade"].Visible = true
+end)
+local d = w:Button("Teleport", function()
+game:GetService("Players").LocalPlayer["PlayerGui"]["MainGui"]["Teleport"].Visible = true
+end)
+local e = w:Button("AllItems", function()
+game:GetService("Players").LocalPlayer["PlayerGui"]["MainGui"]["AdminItemPanel"].Visible = true
+end)
+local f = w:Button("SpeedBoost", function()
+while wait() do
+local bodyvelocity = game.Workspace.Characters["Xander2412"].Collider.BodyVelocity.Velocity
+local doublevelocity = bodyvelocity * 10
+game.Workspace.Characters["Xander2412"].Collider.BodyVelocity.Velocity = doublevelocity
+
+end
+end)
+
+
+
+
